@@ -34,7 +34,7 @@ function ResponsiveAppBar() {
       <div className="menu-bar">
         <div className="menu-left">
           <div className="menu-icon">
-            <MenuIcon fill="#2a5adf"/>
+            <MenuIcon />
           </div>
           <div className="menu-button">
             Page One
@@ -51,10 +51,10 @@ function ResponsiveAppBar() {
             <div>
               Bem vinda, Jane Doe!
             </div>
-            <div>
+            <div className="menu-button" style={{fontSize: "0.75rem", fontWeight: 500}}>
               Cadastro de usuário
             </div>
-            <div>
+            <div className="menu-button" style={{fontSize: "0.75rem", fontWeight: 500}}>
               Configurações
             </div>
           </div>

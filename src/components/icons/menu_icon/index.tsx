@@ -1,6 +1,6 @@
 const MenuIcon = (
   {
-    fill = "#00C0FF"
+    fill = "#000000"
   }
 ) => {
     return (

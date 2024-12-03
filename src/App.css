@@ -69,14 +69,15 @@
 
 .menu-icon {
   display: flex;
-  height: 8vh;
+  height: 2rem;
   margin-right: 2rem;
 }
-/* 
-.menu-icon svg:hover {
-  -webkit-filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, .5));
-  filter: drop-shadow( 1px 1px 1px rgba(0, 0, 0, .5));
-} */
+
+.menu-icon svg:hover path{
+  fill: #2a5adf;
+  /* -webkit-filter: drop-shadow( 1px 1px 1px #2a5adf);
+  filter: drop-shadow( 1px 1px 1px #2a5adf); */
+}
 
 .menu-bar {
   display: flex;
@@ -103,7 +104,7 @@
   align-items: center;
   font-weight: 700;
   font-size: 1.1rem;
-  color: #2a5adf;
+  color: black;
 }
 
 .menu-button:hover{

@@ -1,30 +1,9 @@
-import React from "react";
 import MenuBar from "../icons/menu_bar";
 import MenuIcon from "../icons/menu_icon";
 import GirlAvatar from "../icons/girl_avatar";
-
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
+import Carousel from "../carousel";
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   return (
     <>
@@ -45,21 +24,27 @@ function ResponsiveAppBar() {
           <div className="menu-button">
             Page Tree
           </div>
+          <div className="menu-button">
+            Page Four
+          </div>
         </div>
         <div className="menu-right">
           <div className="user-info">
-            <div>
+            <div style={{marginRight: "1rem"}}>
               Bem vinda, Jane Doe!
             </div>
-            <div className="menu-button" style={{fontSize: "0.75rem", fontWeight: 500}}>
-              Cadastro de usuário
+            <div className="menu-button" style={{fontSize: "1rem", fontWeight: 500}}>
+              Perfil
             </div>
-            <div className="menu-button" style={{fontSize: "0.75rem", fontWeight: 500}}>
+            <div className="menu-button" style={{fontSize: "1rem", fontWeight: 500}}>
               Configurações
             </div>
           </div>
           <GirlAvatar />
         </div>
+      </div>
+      <div>
+        <Carousel />
       </div>
     </>
   );

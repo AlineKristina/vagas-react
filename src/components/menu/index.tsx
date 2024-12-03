@@ -1,6 +1,7 @@
 import React from "react";
 import MenuBar from "../icons/menu_bar";
 import MenuIcon from "../icons/menu_icon";
+import GirlAvatar from "../icons/girl_avatar";
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -31,17 +32,33 @@ function ResponsiveAppBar() {
         <MenuBar className="shape-fill"/>
       </div>
       <div className="menu-bar">
-        <div className="menu-icon">
-          <MenuIcon fill="rgb(0, 157, 255)"/>
+        <div className="menu-left">
+          <div className="menu-icon">
+            <MenuIcon fill="#2a5adf"/>
+          </div>
+          <div className="menu-button">
+            Page One
+          </div>
+          <div className="menu-button">
+            Page Two
+          </div>
+          <div className="menu-button">
+            Page Tree
+          </div>
         </div>
-        <div className="menu-buttton">
-          Page One
-        </div>
-        <div className="menu-buttton">
-          Page Two
-        </div>
-        <div className="menu-buttton">
-          Page Tree
+        <div className="menu-right">
+          <div className="user-info">
+            <div>
+              Bem vinda, Jane Doe!
+            </div>
+            <div>
+              Cadastro de usuário
+            </div>
+            <div>
+              Configurações
+            </div>
+          </div>
+          <GirlAvatar />
         </div>
       </div>
     </>

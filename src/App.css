@@ -69,11 +69,25 @@
 
 .menu-icon {
   display: flex;
-  position: absolute;
   height: 8vh;
-  top: 2rem;
-  left: 2rem;
+  margin-right: 2rem;
 }
 
 .menu-icon svg:hover {
+  background-color: black;
+  -webkit-filter: drop-shadow( 1px 1px 1px rgba(0, 257, 255, .5));
+  filter: drop-shadow( 1px 1px 1px rgba(0, 157, 255, .5));
+}
+
+.menu-bar {
+  display: flex;
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.menu-buttton {
+  display: flex;
+  margin-right: 2rem;
+  align-items: center;
 }

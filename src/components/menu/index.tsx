@@ -30,7 +30,20 @@ function ResponsiveAppBar() {
       <div className="menu-divider">
         <MenuBar className="shape-fill"/>
       </div>
-      <div className="menu-icon"><MenuIcon /></div>
+      <div className="menu-bar">
+        <div className="menu-icon">
+          <MenuIcon fill="rgb(0, 157, 255)"/>
+        </div>
+        <div className="menu-buttton">
+          Page One
+        </div>
+        <div className="menu-buttton">
+          Page Two
+        </div>
+        <div className="menu-buttton">
+          Page Tree
+        </div>
+      </div>
     </>
   );
 }
